@@ -1,0 +1,30 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# An example controller showing a sample home page
+#GET     /                           controllers.HomeController.index
+# An example controller showing how to use dependency injection
+#GET     /count                      controllers.CountController.count
+# An example controller showing how to write asynchronous code
+
+#GET     /about                      controllers.HomeController.about
+# Map static resources from the /public folder to the /assets URL path
+#GET     /assets/*file               controllers.Assets.versioned(file)
+
+#GET     /employeeForm             controllers.employee_controller.employeeForm()
+#POST    /employeeFormPost         controllers.employee_controller.employeeFormPost()
+
+
+
+#GET     /movies                controllers.MovieController.findAll()
+#GET     /movies/:id            controllers.MovieController.findOne(id: String)
+#POST    /movies                controllers.MovieController.create()
+#PUT     /movies/:id            controllers.MovieController.update(id: String)
+#DELETE  /movies/:id            controllers.MovieController.delete(id: String)
+
+GET     /employees                controllers.EmployeeController.findAll()
+GET     /employees/:id            controllers.EmployeeController.findOne(id: String)
+POST    /employees                controllers.EmployeeController.create()
+PUT     /employees/:id            controllers.EmployeeController.update(id: String)
+DELETE  /employees/:id            controllers.EmployeeController.delete(id: String)
